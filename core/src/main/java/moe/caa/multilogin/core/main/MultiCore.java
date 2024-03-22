@@ -136,11 +136,11 @@ public class MultiCore implements MultiCoreAPI {
             LoggerProvider.getLogger().error("Server is closing!!!");
             throw new EnvironmentException("offline mode.");
         }
-        if (!plugin.getRunServer().isForwarded()) {
+        /*if (!plugin.getRunServer().isForwarded()) {
             LoggerProvider.getLogger().error("Please enable forwarding, otherwise the plugin will not work!!!");
             LoggerProvider.getLogger().error("Server is closing!!!");
             throw new EnvironmentException("do not forward.");
-        }
+        }*/
     }
 
     public void reload() throws IOException, URISyntaxException {
